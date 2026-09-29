@@ -29,6 +29,7 @@ jobs:
           mkdir -p dist
           cat pages-assets/site.tar.gz.part-* > /tmp/site.tar.gz
           tar -xzf /tmp/site.tar.gz -C dist
+          rm -f dist/CNAME
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
