@@ -19,3 +19,10 @@ copyLink?.addEventListener('click', async (event) => {
 document.querySelectorAll('img').forEach((image) => {
   if (!image.hasAttribute('decoding')) image.decoding = 'async';
 });
+
+const caseHeader = document.querySelector('.case-header');
+if (caseHeader) {
+  const updateCaseHeader = () => caseHeader.classList.toggle('is-scrolled', window.scrollY > 32);
+  updateCaseHeader();
+  window.addEventListener('scroll', updateCaseHeader, { passive: true });
+}

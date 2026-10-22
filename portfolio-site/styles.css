@@ -211,6 +211,12 @@ img { display: block; max-width: 100%; }
   right: 0;
   left: 0;
   padding: clamp(.8rem, 1.4vw, 1.25rem) var(--gutter) 0;
+  transition: background .25s ease, padding-bottom .25s ease, backdrop-filter .25s ease;
+}
+.case-header.is-scrolled {
+  background: rgba(0, 0, 0, .94);
+  padding-bottom: .8rem;
+  backdrop-filter: blur(7px);
 }
 .case-hero {
   position: relative;
