@@ -25,10 +25,19 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+      - name: Prepare static site
+        run: |
+          rm -rf dist
+          mkdir -p dist
+          cp -R portfolio-site/. dist/
+          if [ -f dist/case-studies-assets.tar.gz ]; then
+            tar -xzf dist/case-studies-assets.tar.gz -C dist
+            rm dist/case-studies-assets.tar.gz
+          fi
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./portfolio-site
+          path: ./dist
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
