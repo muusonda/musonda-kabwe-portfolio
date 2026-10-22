@@ -3,112 +3,122 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Musonda Kabwe — senior designer, art director and illustrator." />
-    <title>Musonda Kabwe — Senior Designer</title>
+    <meta name="description" content="Musonda Kabwe — senior designer, illustrator and art director." />
+    <title>Musonda Kabwe — Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#work">Skip to work</a>
-    <header class="site-header">
-      <a class="monogram" href="#top" aria-label="Musonda Kabwe home">MK</a>
-      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
-        <span class="menu-toggle__label">Menu</span>
-        <span class="menu-toggle__icon" aria-hidden="true">+</span>
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <main class="site-shell">
+      <header class="site-header" id="home">
+        <a class="wordmark wordmark--top" href="./" aria-label="Musonda Kabwe home">Musonda Kabwe</a>
+        <nav class="top-nav" aria-label="Primary navigation">
+          <a class="nav-pill" href="./">Home</a>
+          <a class="nav-pill" href="#info">Info</a>
+          <a class="nav-pill" href="#works">Works</a>
+          <a class="nav-pill" href="#contact">Contact</a>
+        </nav>
+      </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__eyebrow">Senior Designer / Art Director / Illustrator</div>
-        <h1 id="hero-title">Musonda<br /><span>Kabwe</span></h1>
-        <div class="hero__bottom">
-          <p>Brand identity, digital craft and culturally relevant visual storytelling for ambitious African and global brands.</p>
-          <a class="round-link" href="#work" aria-label="Scroll to selected work">↓</a>
+      <section class="home-intro" aria-label="Introduction">
+        <p>I’m Musonda Kabwe, a senior designer and illustrator creating clear, culturally relevant brand identities and digital experiences for ambitious African and global brands.</p>
+      </section>
+
+      <section id="works" class="works-section" aria-labelledby="works-title">
+        <h1 id="works-title" class="sr-only">Selected works</h1>
+        <div class="works-grid">
+          <article class="work-card">
+            <a href="works/uj/">
+              <div class="work-card__meta">
+                <span class="work-card__title">University of Johannesburg</span>
+                <span class="work-card__tags"><span>Brand identity</span><span>Annual report</span></span>
+              </div>
+              <div class="work-card__image"><img src="assets/case-studies/uj/05.webp" alt="University of Johannesburg identity cover reading The Future. Re-imagined." /></div>
+            </a>
+          </article>
+          <article class="work-card">
+            <a href="works/aeci/">
+              <div class="work-card__meta">
+                <span class="work-card__title">AECI</span>
+                <span class="work-card__tags"><span>Brand identity</span><span>Integrated report</span></span>
+              </div>
+              <div class="work-card__image"><img src="assets/case-studies/aeci/36.webp" alt="AECI brand identity cover." /></div>
+            </a>
+          </article>
+          <article class="work-card">
+            <a href="works/supersonic/">
+              <div class="work-card__meta">
+                <span class="work-card__title">SuperSonic</span>
+                <span class="work-card__tags"><span>Brand identity</span><span>Telecoms</span></span>
+              </div>
+              <div class="work-card__image"><img src="assets/case-studies/supersonic/56.webp" alt="SuperSonic brand identity cover." /></div>
+            </a>
+          </article>
         </div>
       </section>
 
-      <section id="work" class="work-section" aria-labelledby="work-title">
-        <div class="section-heading">
-          <span class="section-index">01</span>
-          <h2 id="work-title">Selected work</h2>
-          <span class="section-note">Portfolio skeleton / 2026</span>
-        </div>
-        <div class="project-grid">
-          <button class="project-card project-card--large" type="button" data-project="uj">
-            <span class="project-card__media project-card__media--uj" aria-label="University of Johannesburg project placeholder"><span>UJ<br /><small>The Future. Re-imagined.</small></span></span>
-            <span class="project-card__meta"><strong>University of Johannesburg</strong><small>Brand identity / Annual report</small></span>
-          </button>
-          <button class="project-card" type="button" data-project="aeci">
-            <span class="project-card__media project-card__media--aeci" aria-label="AECI brand identity project placeholder"><span>AECI<br /><small>One AECI</small></span></span>
-            <span class="project-card__meta"><strong>AECI</strong><small>Brand identity / Integrated report</small></span>
-          </button>
-          <button class="project-card" type="button" data-project="supersonic">
-            <span class="project-card__media project-card__media--supersonic" aria-label="SuperSonic brand identity project placeholder"><span>super<br />sonic</span></span>
-            <span class="project-card__meta"><strong>SuperSonic</strong><small>Brand identity / Telecoms</small></span>
-          </button>
-        </div>
-        <p class="section-footnote">Three portfolio projects are staged here first. Each card opens a case-study shell ready for images, process notes and outcomes.</p>
-      </section>
-
-      <section id="about" class="about-section" aria-labelledby="about-title">
-        <div class="section-heading">
-          <span class="section-index">02</span>
-          <h2 id="about-title">About</h2>
-          <span class="section-note">A short introduction</span>
-        </div>
-        <div class="about-grid">
-          <p class="about-lead">I’m Musonda Kabwe, a senior designer, illustrator and art director based in Johannesburg. I work across brand identity, digital and social design, illustration, storyboarding and integrated campaign rollout.</p>
-          <div class="about-copy">
-            <p>My practice is grounded in African visual culture and a love of clear, useful systems. I help teams turn complex ideas into visual languages that can travel across channels, audiences and formats.</p>
-            <div class="capability-list" aria-label="Capabilities">
-              <span>Brand identity</span><span>Art direction</span><span>Digital design</span><span>Illustration</span><span>Storyboarding</span><span>Motion</span>
-            </div>
-          </div>
+      <section id="info" class="info-section" aria-labelledby="about-heading">
+        <div class="info-heading"><h2 id="about-heading">( About me )</h2></div>
+        <div class="info-copy">
+          <p>I’m a Johannesburg-based senior designer, illustrator and art director. My practice moves between brand identity, editorial and annual reports, digital design, illustration, storyboarding and integrated campaign rollout.</p>
+          <p>My work is grounded in African visual culture and a love of useful systems. I turn complex ideas into visual languages that can travel across channels, audiences and formats.</p>
         </div>
       </section>
 
-      <section class="credentials-section" aria-labelledby="credentials-title">
-        <div class="section-heading">
-          <span class="section-index">03</span>
-          <h2 id="credentials-title">Selected credentials</h2>
-          <span class="section-note">CV highlights</span>
-        </div>
-        <div class="credential-grid">
-          <div><span class="credential-label">Recent work</span><p>Ogilvy South Africa · Designer Group Head<br />Müs · Illustrator / Creative Partner<br />Netflix · Gates Foundation · Google</p></div>
-          <div><span class="credential-label">Clients</span><p>Apple Music · Adobe · Amazon · Huawei<br />Mastercard · Telkom · SuperSonic · Woolworths</p></div>
-          <div><span class="credential-label">Recognition</span><p>Craft Gold Loerie · Oct 2026<br />Craft Gold Loerie · 2018<br />Design Indaba Emerging Creative · 2015</p></div>
+      <section class="stats-section" aria-label="Selected statistics">
+        <div class="stat"><strong>03</strong><span>Case studies</span></div>
+        <div class="stat"><strong>10+</strong><span>Years designing</span></div>
+        <div class="stat"><strong>01</strong><span>Craft Gold Loerie · 2026</span></div>
+      </section>
+
+      <section class="services-section" aria-labelledby="services-heading">
+        <div class="section-label"><h2 id="services-heading">What I do</h2></div>
+        <div class="service-list">
+          <div><span>Brand identity</span><span class="service-plus">+</span></div>
+          <div><span>Art direction</span><span class="service-plus">+</span></div>
+          <div><span>Editorial &amp; annual reports</span><span class="service-plus">+</span></div>
+          <div><span>Digital design</span><span class="service-plus">+</span></div>
+          <div><span>Illustration &amp; storyboarding</span><span class="service-plus">+</span></div>
+          <div><span>Social &amp; campaign systems</span><span class="service-plus">+</span></div>
         </div>
       </section>
+
+      <section class="experience-section" aria-labelledby="experience-heading">
+        <div class="section-label"><h2 id="experience-heading">Work experience</h2></div>
+        <div class="experience-list">
+          <div><span>Designer Group Head</span><span>Ogilvy South Africa</span><span>2022 — Now</span></div>
+          <div><span>Illustrator / Creative Partner</span><span>Müs</span><span>2018 — Now</span></div>
+          <div><span>Senior Designer</span><span>Independent / Studio</span><span>2015 — 2022</span></div>
+          <div><span>Designer</span><span>Johannesburg</span><span>2013 — 2015</span></div>
+        </div>
+      </section>
+
+      <section class="awards-section" aria-labelledby="awards-heading">
+        <div class="section-label"><h2 id="awards-heading">Awards</h2></div>
+        <div class="award-list">
+          <div><span>Craft Gold Loerie</span><span>Loerie Awards</span><span>2026</span></div>
+          <div><span>Craft Gold Loerie</span><span>Loerie Awards</span><span>2018</span></div>
+          <div><span>Design Indaba Emerging Creative</span><span>Design Indaba</span><span>2015</span></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+        <p class="contact-copy">Ready to work together? Let’s talk about brand identities, collaborations and ambitious creative work.</p>
+        <a id="contact-heading" class="contact-link" href="mailto:hello@musondakabwe.com">hello@musondakabwe.com</a>
+      </section>
+
+      <footer class="site-footer">
+        <div class="footer-links">
+          <a href="https://www.instagram.com/musondakabwe/" target="_blank" rel="noreferrer">Insta</a>
+          <a href="https://www.linkedin.com/in/musonda" target="_blank" rel="noreferrer">Lnkdn</a>
+          <a href="https://www.behance.net/Musonda" target="_blank" rel="noreferrer">Bē</a>
+          <a href="mailto:hello@musondakabwe.com">Email</a>
+        </div>
+        <a class="wordmark wordmark--footer" href="#home" aria-label="Back to top">Musonda Kabwe</a>
+      </footer>
     </main>
-
-    <footer id="contact" class="site-footer">
-      <div class="footer-top"><span>04 / Contact</span><span>Johannesburg, South Africa</span></div>
-      <a class="footer-title" href="mailto:hello@musondakabwe.com">Let’s make<br /><span>something good.</span></a>
-      <div class="footer-bottom"><a href="mailto:hello@musondakabwe.com">hello@musondakabwe.com</a><a href="https://www.linkedin.com/in/musonda" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.behance.net/Musonda" target="_blank" rel="noreferrer">Behance ↗</a><span>© 2026 Musonda Kabwe</span></div>
-    </footer>
-
-    <dialog class="project-dialog" aria-labelledby="dialog-title">
-      <button class="dialog-close" type="button" aria-label="Close project">×</button>
-      <div class="dialog-content">
-        <div class="dialog-kicker" data-dialog-kicker></div>
-        <h2 id="dialog-title" data-dialog-title></h2>
-        <div class="dialog-layout">
-          <div class="dialog-details">
-            <p data-dialog-summary></p>
-            <dl><div><dt>Task</dt><dd data-dialog-task></dd></div><div><dt>Services</dt><dd data-dialog-services></dd></div></dl>
-          </div>
-          <div class="dialog-placeholder"><span>Project gallery<br />coming next</span></div>
-        </div>
-      </div>
-    </dialog>
     <script src="script.js"></script>
   </body>
 </html>

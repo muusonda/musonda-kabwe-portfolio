@@ -1,15 +1,13 @@
-# Musonda Kabwe Portfolio Skeleton
+# Musonda Kabwe portfolio
 
-A static, GitHub Pages-ready portfolio skeleton based on the attached Cole minimal portfolio reference. The first three project shells use projects from the 2026 design portfolio:
+Cole-inspired GitHub Pages portfolio for Musonda Kabwe.
 
-- University of Johannesburg — brand identity and annual report
-- AECI — brand identity and integrated report
-- SuperSonic — telecoms brand identity
+The home page uses the supplied Cole reference structure: oversized wordmark, pill navigation, two-column project grid, compact metadata tags, information sections, and a large contact footer.
 
-## Preview locally
+The complete case studies are sourced from the portfolio PDF:
 
-Open `index.html` in a browser or serve the folder with any static file server.
+- works/uj/ — University of Johannesburg, pages 3–34
+- works/aeci/ — AECI, pages 35–54
+- works/supersonic/ — SuperSonic, pages 55–60
 
-## Publish on GitHub Pages
-
-Create or select a GitHub repository, upload the contents of `portfolio-site/` to its default branch, then enable **Settings → Pages → Deploy from a branch** and choose the repository root. No build step is required.
+The rendered case-study pages are stored under assets/case-studies/.
