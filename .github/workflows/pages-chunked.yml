@@ -23,22 +23,12 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-
-      - name: Rebuild the portfolio directory
-        run: |
-          mkdir -p dist
-          cat pages-assets/site.tar.gz.part-* > /tmp/site.tar.gz
-          tar -xzf /tmp/site.tar.gz -C dist
-          rm -f dist/CNAME
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
-
+          path: ./portfolio-site
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
