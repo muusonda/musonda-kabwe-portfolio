@@ -50,5 +50,5 @@ menuButton?.addEventListener('click', () => {
 nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
   nav.classList.remove('is-open');
   menuButton?.setAttribute('aria-expanded', 'false');
-  menuButton?.querySelector('.menu-toggle__icon').textContent = '+';
+  if (menuButton) menuButton.querySelector('.menu-toggle__icon').textContent = '+';
 }));
